@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Sagar Shivaji · About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Custom Glow Backgrounds -->
+  <div class="glow-bg glow-bg-1"></div>
+  <div class="glow-bg glow-bg-2"></div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="progressBar"></div>
+
+  <!-- Mobile Menu Overlay & Menu -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="closeMobileMenu()"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/index.html">Home</a>
+    <a href="/work.html">Work</a>
+    <a href="/about.html">About</a>
+    <a href="/research.html">Research</a>
+    <div class="mobile-theme-section">
+      <span class="small font-medium">Theme</span>
+      <div class="theme-toggle" id="themeToggleMobile" title="Toggle theme">
+        <button class="theme-toggle-btn" data-theme="light" aria-label="Light mode">☀</button>
+        <button class="theme-toggle-btn active" data-theme="dark" aria-label="Dark mode">☾</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Palette (⌘K) -->
+  <div class="command-overlay" id="commandOverlay">
+    <div class="command-panel">
+      <div class="command-search-wrapper">
+        <input type="text" class="command-search" placeholder="Search pages, case studies, research..." id="commandInput" autocomplete="off" autofocus>
+        <div class="command-esc">ESC</div>
+      </div>
+      <div class="command-results" id="commandResults">
+        <div class="command-group-title">Pages</div>
+        <div class="command-item" data-action="/index.html">
+          <span class="command-item-left">Home</span>
+          <span class="command-shortcut">⌘H</span>
+        </div>
+        <div class="command-item" data-action="/work.html">
+          <span class="command-item-left">Work</span>
+          <span class="command-shortcut">⌘W</span>
+        </div>
+        <div class="command-item" data-action="/about.html">
+          <span class="command-item-left">About</span>
+          <span class="command-shortcut">⌘A</span>
+        </div>
+        <div class="command-item" data-action="/research.html">
+          <span class="command-item-left">Research</span>
+          <span class="command-shortcut">⌘R</span>
+        </div>
+
+        <div class="command-group-title">Case Studies</div>
+        <div class="command-item" data-action="/work/bench-sales.html">
+          <span class="command-item-left">Bench Sales Platform</span>
+          <span class="command-shortcut">1</span>
+        </div>
+        <div class="command-item" data-action="/work/lead-generator.html">
+          <span class="command-item-left">Lead Generator</span>
+          <span class="command-shortcut">2</span>
+        </div>
+        <div class="command-item" data-action="/work/laundry-app.html">
+          <span class="command-item-left"> Laundry App</span>
+          <span class="command-shortcut">3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop Navigation Bar -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo" onclick="window.location.href='/index.html'">
+    
+        <span class="logo-text">Sagar Shivaji</span>
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/work.html">Work</a>
+        <a href="/about.html">About</a>
+        <a href="/research.html">Research</a>
+        <div class="nav-divider"></div>
+        <div class="theme-toggle" id="themeToggle" title="Toggle theme">
+          <button class="theme-toggle-btn" data-theme="light" aria-label="Light mode">☀</button>
+          <button class="theme-toggle-btn active" data-theme="dark" aria-label="Dark mode">☾</button>
+        </div>
+        <span class="command-badge" onclick="openCommand()" title="Open Command Palette (⌘K)">⌘K</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ABOUT CONTENT -->
+  <div class="page" id="page-about">
+    <main class="container">
+      <section class="page-section">
+        <div class="reading-width">
+          <h1 class="heading-1 reveal" style="margin-bottom:40px;">About</h1>
+          <div class="portrait-container reveal" style="width:250px; height: 300px; margin-bottom:48px; ">
+            <div class="portrait-glow"></div>
+            <div class="portrait" style="width:90%; height: 100%; border-radius: 24px; overflow:hidden;">
+              <img src="/images/my image.jpg" alt="Sagar portrait">
+            </div>
+          </div>
+          <p class="body-large reveal text-primary" style="margin-bottom:32px; font-weight:500;">I am Sagar Shivaji, an AI Product Designer based in Hyderabad, India. I specialize in complex B2B platforms, design systems, and workflow automation.</p>
+          <p class="body-base reveal text-secondary" style="margin-bottom:24px;">With a background in Computer Science specializing in Artificial Intelligence, I bridge the gap between design and technology. I enjoy designing AI-powered products, building scalable design systems, and creating workflows that make enterprise software more efficient, accessible, and easier to use.</p>
+          
+          <div class="divider reveal"></div>
+          
+          <h2 class="heading-3 reveal font-semibold" style="margin-bottom:24px;">Core Capabilities</h2>
+          <div class="reveal capabilities-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:48px;">
+            <div class="capability-item"><span class="bullet">✦</span> Product Strategy</div>
+            <div class="capability-item"><span class="bullet">✦</span> User Experience & Research</div>
+            <div class="capability-item"><span class="bullet">✦</span> Complex Design Systems</div>
+            <div class="capability-item"><span class="bullet">✦</span> Web Accessibility (WCAG 2.2)</div>
+            <div class="capability-item"><span class="bullet">✦</span> Interactive Prototyping</div>
+            <div class="capability-item"><span class="bullet">✦</span> LLM & AI workflow mapping</div>
+            <div class="capability-item"><span class="bullet">✦</span> Information Architecture</div>
+          </div>
+          
+          <div class="divider reveal"></div>
+          
+          <h2 class="heading-3 reveal font-semibold" style="margin-bottom:24px;">Professional History</h2>
+          <div class="timeline-item reveal" style="margin-bottom:32px;">
+            <div class="timeline-header">
+              <h4 class="font-semibold text-primary">AI Product Designer · Vensiti Inc.</h4>
+              <span class="timeline-date small font-semibold">Mar 2026 – Present</span>
+            </div>
+            <p class="small text-secondary" style="margin-top: 4px;">Designing enterprise SaaS products focused on staffing and recruitment. Leading the design of AI-powered platforms including Bench Sales, Lead Generator, Job Pipeline, and Resume Formatter while collaborating closely with product managers, developers, and business stakeholders.</p>
+          </div>
+          <div class="timeline-item reveal" style="margin-bottom:32px;">
+            <div class="timeline-header">
+              <h4 class="font-semibold text-primary">AI Product Design Intern · Techgene Solutions</h4>
+              <span class="timeline-date small font-semibold">Dec 2025 – Feb 2026</span>
+            </div>
+            <p class="small text-secondary" style="margin-top: 4px;">Designed internal enterprise applications and workflow automation tools, contributing to user research, wireframing, high-fidelity interfaces, design systems, and interactive prototypes for AI-driven products.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-header">
+              <h4 class="font-semibold text-primary">UX Design Intern · Brain Quest</h4>
+              <span class="timeline-date small font-semibold">May 2025 – Jun 2025</span>
+            </div>
+            <p class="small text-secondary" style="margin-top: 4px;">Designed responsive user interfaces with a strong focus on usability and accessibility. Collaborated with the design team to create wireframes, iterate on high-fidelity designs, and improve user experiences through feedback and design reviews.</p>
+          </div>
+
+          <h2 class="heading-3 reveal font-semibold" style="margin-bottom:24px; margin-top: 40px;">Education</h2>
+          <div class="timeline-item reveal">
+            <div class="timeline-header">
+              <h4 class="font-semibold text-primary">B.Tech — Computer Science (Artificial Intelligence & Machine Learning)</h4>
+              <span class="timeline-date small font-semibold">Nov 2021 – Aug 2025</span>
+            </div>
+            <p class="small text-secondary" style="margin-top: 4px;">Specialized in Artificial Intelligence and Machine Learning while building projects in AI, computer vision, and product design. Developed a strong foundation in human-centered design, frontend development, and AI-powered digital experiences.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="small text-tertiary">© Sagar Shivaji 2026</span>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/sagar-shivaji-090904262/" class="small text-tertiary footer-link" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
