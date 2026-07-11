@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Lead Generator Case Study</title>
+  <title>Job Notification - Real-time Job Alert Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
   <!-- Custom Glow Backgrounds -->
@@ -59,7 +60,7 @@
           <span class="command-shortcut">⌘A</span>
         </div>
         <div class="command-item" data-action="../research.html">
-          <span class="command-item-left"> Research</span>
+          <span class="command-item-left">Research</span>
           <span class="command-shortcut">⌘R</span>
         </div>
 
@@ -88,7 +89,6 @@
   <nav class="nav" id="navbar">
     <div class="nav-inner">
       <div class="nav-logo" onclick="window.location.href='../index.html'">
-        
         <span class="logo-text">Sagar Shivaji</span>
       </div>
       <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
@@ -113,8 +113,8 @@
     </div>
   </nav>
 
-  <!-- CASE STUDY: LINEAR PALETTE -->
-  <div class="page" id="page-project-2">
+  <!-- CASE STUDY: Job Notification -->
+  <div class="page" id="page-project-job-pulse">
     <main class="project-container">
       <section class="page-section">
         <a href="../work.html" class="btn btn-ghost reveal" style="padding-left:0; margin-bottom:32px; font-weight: 500;">
@@ -122,84 +122,105 @@
         </a>
         
         <div class="reveal">
-          <span class="caption accent-text font-semibold"> shipped 2026</span>
-          <h1 class="heading-1 font-semibold" style="margin:16px 0; max-width:840px;">Lead Generator</h1>
+          <span class="caption accent-text font-semibold">Live App · 2026</span>
+          <h1 class="heading-1 font-semibold" style="margin:16px 0; max-width:840px;">Job Notification: Real-time Job Alert Dashboard</h1>
         </div>
         
         <div class="project-info-bar reveal">
-          <div class="project-info-item"><span class="small text-tertiary">Role</span><strong class="text-primary">Staff Designer</strong></div>
-          <div class="project-info-item"><span class="small text-tertiary">Industry</span><strong class="text-primary">Developer SaaS</strong></div>
-          <div class="project-info-item"><span class="small text-tertiary">Timeline</span><strong class="text-primary">4 months</strong></div>
-          <div class="project-info-item"><span class="small text-tertiary">Reading time</span><strong class="text-primary">6 min</strong></div>
+          <div class="project-info-item"><span class="small text-tertiary">Role</span><strong class="text-primary">Full-Stack Developer & Designer</strong></div>
+          <div class="project-info-item"><span class="small text-tertiary">Industry</span><strong class="text-primary">Job Search & Productivity</strong></div>
+          <div class="project-info-item"><span class="small text-tertiary">Timeline</span><strong class="text-primary">1 week</strong></div>
+          <div class="project-info-item"><span class="small text-tertiary">Reading time</span><strong class="text-primary">5 min</strong></div>
         </div>
 
         <div class="project-hero-image-wrapper reveal">
-          <img src="../images/lead generator.png" alt="Linear command palette" class="project-hero-img" style="
-    filter: blur(8px);
-    opacity: 0.5;
-  ">
+          <img src="../images/job-pulse.png" alt="Job Notification Dashboard" class="project-hero-img">
         </div>
 
         <div class="project-layout">
           <nav class="sticky-nav">
-            <a href="#overview2" class="active">Overview</a>
-            <a href="#problem2">Problem</a>
-            <a href="#design2">Design Details</a>
-            <a href="#results2">Results</a>
+            <a href="#overview" class="active">Overview</a>
+            <a href="#problem">Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#process">Process</a>
+            <a href="#results">Results</a>
           </nav>
           
           <div class="project-content-block">
-            <div id="overview2" class="project-content-section reveal">
+            <div id="overview" class="project-content-section reveal">
               <h2 class="heading-2 font-semibold" style="margin-bottom:16px;">Overview</h2>
               <div class="project-section-grid">
                 <div class="project-summary-text">
-                  <p class="body-large text-primary" style="margin-bottom: 16px;">Lead Generator is an AI-powered enterprise platform designed to help sales and recruitment teams discover, qualify, and manage potential business leads from multiple data sources.</p>
-                  <p class="body-base text-secondary">The goal was to reduce manual lead research by centralizing lead discovery, AI-assisted qualification, and pipeline management into a single workflow.</p>
+                  <p class="body-large text-primary" style="margin-bottom: 16px;">Job Notification is an automated job search tool that polls developer job feeds and aggregates postings into a streamlined, customizable UI. Built using React, Node.js, and SQLite, it eliminates manual searching by delivering notifications instantly.</p>
+                  <p class="body-base text-secondary">Initially developed as a local tool, the system was fully deployed to Vercel, integrating serverless APIs, lightweight storage, and notification channels like Telegram and Discord.</p>
+                  <div style="margin-top: 24px;">
+                    <a href="https://jobnotification-eafdzfp2g-sagar197.vercel.app" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 8px;">
+                      Open Live App <span class="material-symbols-outlined" style="font-size: 1.1em; margin: 0;">open_in_new</span>
+                    </a>
+                  </div>
                 </div>
                 <div class="project-sidebar-stat">
-                  <div class="insight-stat font-bold">120ms</div>
-                  <p class="small text-secondary font-semibold">Maximum input response lag</p>
+                  <div class="insight-stat font-bold">1 hr</div>
+                  <p class="small text-secondary font-semibold">Maximum Notification Delay</p>
                 </div>
               </div>
             </div>
 
-            <div id="problem2" class="project-content-section reveal">
-              <h2 class="heading-2 font-semibold" style="margin-bottom:16px;">Problem</h2>
+            <div id="problem" class="project-content-section reveal">
+              <h2 class="heading-2 font-semibold" style="margin-bottom:16px;">The Problem</h2>
               <p class="body-base text-secondary" style="margin-bottom:16px;">
-                Sales teams relied on multiple websites, spreadsheets, and CRM tools to identify and organize potential leads. Gathering company information, validating contacts, and tracking outreach required repetitive manual effort and resulted in fragmented workflows.
+                Checking multiple job portals, forums (like Upwork or Web3 RSS feeds), and boards daily is incredibly time-consuming. Job postings often close quickly, meaning candidates who apply within the first few hours stand the highest chance of success.
               </p>
               <p class="body-base text-secondary">
-                As lead volume increased, teams struggled to prioritize high-quality prospects, maintain accurate data, and collaborate efficiently across sales pipelines.
+                Typical job alerts are either too slow (daily digests) or lack granular filtering (by keywords, location, or source platform), resulting in inbox clutter and missed opportunities.
+              </p>
             </div>
 
-            <div id="design2" class="project-content-section reveal">
-              <h2 class="heading-2 font-semibold" style="margin-bottom:16px;">Design Details</h2>
+            <div id="solution" class="project-content-section reveal">
+              <h2 class="heading-2 font-semibold" style="margin-bottom:16px;">The Solution</h2>
               <p class="body-base text-secondary" style="margin-bottom:16px;">
-                The platform was designed around three core experiences:
+                I built a personalized full-stack system that constantly scans job channels and formats them beautifully:
               </p>
               <ul class="project-list" style="margin-bottom: 24px;">
-                <li><strong>AI Lead Discovery</strong>: Automatically identify and organize potential leads based on industry, location, company size, and business requirements.</li>
-                <li><strong>Lead Qualification</strong>: Surface relevant company information, contact details, and qualification insights to help sales teams prioritize opportunities.</li>
-                <li><strong>Pipeline Management</strong>: Provide a centralized dashboard for tracking lead status, assignments, outreach progress, and follow-up activities.</li>
+                <li><strong>Automatic Scanning</strong>: Periodically pulls job posts via RSS and parses them on a serverless scheduler.</li>
+                <li><strong>Dynamic Search & Filters</strong>: Filter by keywords, location, source platform, and date, or toggle custom categories instantly.</li>
+                <li><strong>Instant Actions</strong>: Delete unwanted cards, toggle "Applied" status, or perform a manual job sync with a single click.</li>
+                <li><strong>Zero-Loss Settings</strong>: Settings are persisted locally and synced with the backend to ensure zero configuration loss on page refresh.</li>
               </ul>
+            </div>
+
+            <div id="process" class="project-content-section reveal">
+              <h2 class="heading-2 font-semibold" style="margin-bottom:16px;">Process & Technical Execution</h2>
               <p class="body-base text-secondary" style="margin-bottom:16px;">
-                This approach simplified lead management while enabling teams to focus on meaningful sales conversations instead of manual data collection.
+                Building for production on Vercel presented unique architectural challenges compared to local environments:
+              </p>
+              <h3 class="heading-3 font-semibold" style="margin-bottom:12px; margin-top:20px;">1. Serverless Life Cycle Management</h3>
+              <p class="body-base text-secondary" style="margin-bottom:16px;">
+                Vercel Serverless Functions tear down execution contexts as soon as an API response is sent. A background scraper function would get killed prematurely. I rewrote the scraper trigger API to sequentially `await` the RSS parsing loop before returning a response, ensuring 100% processing completion.
+              </p>
+              <h3 class="heading-3 font-semibold" style="margin-bottom:12px; margin-top:20px;">2. Lightweight Storage Integration</h3>
+              <p class="body-base text-secondary" style="margin-bottom:16px;">
+                A local SQLite database was ported to work efficiently inside serverless handlers, managing schema initialization automatically on cold starts and ensuring zero loss of user credentials and filters.
+              </p>
+              <h3 class="heading-3 font-semibold" style="margin-bottom:12px; margin-top:20px;">3. Minimalist UX Iterations</h3>
+              <p class="body-base text-secondary" style="margin-bottom:16px;">
+                The UI was redesigned to move away from distracting multi-color gradients and complex emojis. Instead, a sleek, flat dark theme using solid purple (`#a855f7`) accents and Google Material Symbols was implemented to prioritize reading clarity and efficiency.
               </p>
             </div>
 
-            <div id="results2" class="project-content-section reveal">
+            <div id="results" class="project-content-section reveal">
               <h2 class="heading-2 font-semibold" style="margin-bottom:16px;">Results</h2>
-              <p class="body-base text-secondary" style="margin-bottom:16px;">
-               After implementing the Lead Generator platform, sales teams reported significant improvements in lead management efficiency and data accuracy. The AI-assisted workflows reduced manual research time, allowing teams to focus on high-value interactions with prospects.
+              <p class="body-base text-secondary" style="margin-bottom:24px;">
+                The deployed app runs continuously, delivering alerts, maintaining state, and helping track job applications systematically.
               </p>
               <div class="project-section-grid">
                 <div class="metric-result-card">
-                  <div class="insight-stat font-bold accent-text">1</div>
-                  <p class="small text-secondary font-medium">Unified Lead Management Workspace</p>
+                  <div class="insight-stat font-bold accent-text">100%</div>
+                  <p class="small text-secondary font-medium">Automatic Processing Completion</p>
                 </div>
                 <div class="metric-result-card">
-                  <div class="insight-stat font-bold accent-text">AI</div>
-                  <p class="small text-secondary font-medium">Assisted Workflow</p>
+                  <div class="insight-stat font-bold accent-text">&lt; 1s</div>
+                  <p class="small text-secondary font-medium">Instant Filter Latency</p>
                 </div>
               </div>
             </div>
@@ -219,13 +240,13 @@
 
   <script src="../script.js"></script>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BDRFHDY8E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BDRFHDY8E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-1BDRFHDY8E');
-</script>
+    gtag('config', 'G-1BDRFHDY8E');
+  </script>
 </body>
 </html>
