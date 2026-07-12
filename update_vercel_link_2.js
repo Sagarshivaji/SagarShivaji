@@ -8,8 +8,8 @@ const files = [
   'work/job-pulse.html'
 ];
 
-const oldUrl = 'https://jobnotification-eafdzfp2g-sagar197.vercel.app';
-const newUrl = 'https://jobnotification-7l239ca15-sagar197.vercel.app';
+const oldUrl = 'https://jobnotification-7l239ca15-sagar197.vercel.app';
+const newUrl = 'https://jobnotification-parzuu1ou-sagar197.vercel.app';
 
 files.forEach(f => {
   const filePath = path.join(baseDir, f);
