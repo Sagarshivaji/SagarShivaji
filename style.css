@@ -1329,53 +1329,142 @@ body {
 
 .nda-notice p:last-child {
   margin-bottom: 0;
-/* Sketch Gallery */
+}
+.sketchbook-section {
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 0 24px;
+}
+
+.sketchbook-header {
+  max-width: 900px;
+  margin-bottom: 56px;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 16px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+
+  color: #ff3b3b;
+}
+
+.sketchbook-header h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+
+  color: #f5f5f5;
+}
+
+.sketchbook-header p {
+  width: 100%;
+  margin: 0 0 14px;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: #8d8d93;
+}
+
+
+/* Gallery */
 
 .sketch-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
 .sketch {
   margin: 0;
-  min-width: 0;
+}
+
+.sketch-featured {
+  grid-column: 1 / -1;
 }
 
 .sketch img {
   width: 100%;
-  height: 300px;
-  display: block;
+  height: 320px;
 
+  display: block;
+  object-fit: cover;
+
+  border-radius: 12px;
+  background: #111;
+
+  filter: grayscale(15%);
+
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.sketch-featured img {
+  background: #ffffff;
   object-fit: contain;
   object-position: center;
-
-  background: #ffffff;
-  border-radius: 10px;
-
-  transition: transform 0.3s ease;
+  height: 500px;
 }
 
 .sketch:hover img {
-  transform: translateY(-4px);
+  transform: scale(1.01);
+  filter: grayscale(0%);
 }
 
 .sketch figcaption {
-  margin-top: 10px;
+  margin-top: 12px;
+
   font-size: 13px;
   color: #69696f;
+}
+
+
+/* Ending quote */
+
+.sketchbook-footer {
+  max-width: 900px;
+
+  margin-top: 64px;
+  padding-top: 28px;
+
+  border-top: 1px solid #1c1c1f;
+}
+
+.sketchbook-footer p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #b8b8bd;
 }
 
 
 /* Mobile */
 
 @media (max-width: 700px) {
-  .sketch-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+
+  .sketchbook-section {
+    margin: 80px auto;
   }
 
-  .sketch img {
+  .sketch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sketch-featured {
+    grid-column: auto;
+  }
+
+  .sketch img,
+  .sketch-featured img {
     height: auto;
     aspect-ratio: 4 / 5;
   }
