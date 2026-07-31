@@ -1266,7 +1266,7 @@ body {
   .container,
   .nav-inner,
   .project-container {
-    padding: 0 18px;
+    padding: 18px 18px;
   }
   .display-xl {
     font-size: 32px;
